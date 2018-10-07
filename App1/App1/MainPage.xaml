@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <NavigationPage Title="Search Text">
+        <x:Arguments>
+            <local:SearchPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Amazon">
+        <x:Arguments>
+            <local:AmazonSearchPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Google">
+        <x:Arguments>
+            <local:GoogleSearchPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Ebay">
+        <x:Arguments>
+            <local:EbaySearchPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Custom">
+        <x:Arguments>
+            <local:CustomSearchPage />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
